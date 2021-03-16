@@ -1,0 +1,41 @@
+<ul class="navbar-nav bg-gradient-primary sidebar sidebar-dark accordion" id="accordionSidebar">
+
+    <a class="sidebar-brand d-flex align-items-center justify-content-center" href="index.html">
+        <div class="sidebar-brand-icon rotate-n-15">
+            <i class="fas fa-dove"></i>
+        </div>
+    </a>
+
+    <hr class="sidebar-divider">
+
+    <li class="nav-item">
+        <a class="nav-link" onclick="loadAddActivity()">
+            <i class="fas fa-calendar-plus"></i>
+            <span>Add</span>
+        </a>
+    </li>
+
+    <hr class="sidebar-divider">
+
+    <li class="nav-item">
+        <a class="nav-link" onclick="loadAllActivities()">
+            <i class="fas fa-eye"></i>
+            <span>View</span>
+        </a>
+    </li>
+
+    <hr class="sidebar-divider">
+
+    <li class="nav-item">
+        <a class="nav-link" onclick="loadSearchActivities()">
+            <i class="fas fa-search"></i>
+            <span>Search</span>
+        </a>
+    </li>
+</ul>
+
+<script>
+    $(function(){
+        $("#accordionSidebar").addClass("toggled");
+    });
+</script>

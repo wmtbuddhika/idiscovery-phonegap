@@ -1,0 +1,26 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<plugin xmlns="http://www.phonegap.com/ns/plugins/1.0"
+        id="org.phonegap.plugins.twitter"
+        version="0.1.0">
+<name>Twitter Plugin</name>
+<description>Helper to get accessToken and post tweets</description>
+<license>MIT</license>
+<keywords>phonegap,twitter</keywords>
+
+
+<js-module src="www/twitter.js" name="TwitterPlugin">
+    <clobbers target="window.twitter" />
+</js-module>
+
+<!-- android -->
+<platform name="android">
+    <config-file target="res/xml/config.xml" parent="/*">
+        <feature name="TwitterPlugin">
+            <param name="android-package" value="org.phonegap.plugins.twitter.TwitterPlugin"/>
+        </feature>
+    </config-file>
+
+    <source-file src="src/android/TwitterPlugin.java" target-dir="src/org/phonegap/plugins/twitter" />
+</platform>
+</plugin>

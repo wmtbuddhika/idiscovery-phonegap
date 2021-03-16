@@ -1,0 +1,13 @@
+{
+    "version": "0.0.1",
+    "name": "org.phonegap.plugins.twitter",
+    "cordova_name": "Twitter",
+    "description": "Cordova Twitter Plugin",
+    "license": "Apache 2.0",
+    "keywords": [
+        "cordova",
+        "phonegap",
+        "twitter"
+    ],
+    "engines": []
+}
